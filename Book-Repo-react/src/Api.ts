@@ -1,4 +1,4 @@
-// Api.ts
+
 interface Book{
     id:number;
     title:string;
@@ -10,14 +10,14 @@ interface Book{
 
 export const fetchBooks = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/books'); // Adjust URL as per your backend
+      const response = await fetch('http://localhost:3000/api/books'); 
       if (!response.ok) {
         throw new Error('Failed to fetch books');
       }
       return await response.json();
     } catch (error) {
       console.error('Error fetching books:', error);
-      throw error; // Propagate the error back to the caller
+      throw error; 
     }
   };
   
@@ -73,7 +73,7 @@ export const fetchBooks = async () => {
         throw new Error('Failed to delete book');
       }
   
-      return true; // Return true if deletion was successful
+      return true; 
     } catch (error) {
       console.error('Error deleting book:', error);
       throw error;

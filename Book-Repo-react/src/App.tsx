@@ -1,4 +1,4 @@
-// App.tsx
+
 import React, { useReducer, useRef, useState, useCallback, useEffect } from 'react';
 import useLocalStorage from './hooks';
 import './App.css';
