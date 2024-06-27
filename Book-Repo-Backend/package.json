@@ -1,0 +1,36 @@
+{
+  "name": "Book-Repo-Tables",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node ./dist/index.js",
+    "build": "tsc",
+    "gen": "drizzle-kit generate",
+    "migrate": "tsx src/drizzle/migrate.ts",
+    "studio": "drizzle-kit studio",
+    "push": "drizzle-kit generate && tsx src/drizzle/migrate.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "@types/pg": "^8.11.6",
+    "drizzle-kit": "^0.22.7",
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.11.4",
+    "@hono/zod-validator": "^0.2.2",
+    "@neondatabase/serverless": "^0.9.4",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.31.2",
+    "hono": "^4.4.8",
+    "pg": "^8.12.0",
+    "zod": "^3.23.8"
+  }
+}

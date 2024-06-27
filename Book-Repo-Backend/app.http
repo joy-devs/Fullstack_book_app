@@ -1,0 +1,24 @@
+GET http://localhost:3000/api/books 
+
+###
+POST http://localhost:3000/api/books
+Content-Type: application/json
+
+{
+   "id": 9,
+    "title": "Leadership",
+    "author": "John Maxwell",
+    "year": 2019 
+}
+
+###
+DELETE http://localhost:3000/api/books/9  
+###
+
+PUT http://localhost:3000/api/books/10
+Content-Type: application/json
+
+{
+    "title": "Developing a Leader"
+}
+
